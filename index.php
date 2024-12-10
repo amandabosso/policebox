@@ -5,4 +5,6 @@
 
    include './includes/footer.php';
 
-   include './includes/html/banner.html';
+   // include './includes/html/banner.html';
+   
+   include './includes/produto.php';
