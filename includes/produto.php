@@ -2,15 +2,17 @@
     <h2 class="titulo"> Produtos </h2>
     <main class="container produtos">
         <div class="row">
+            <?php foreach ($dadosProdutos as $dados) { ?>
+          
             <div class="col-3">
                 <figure>
-                    <img src="./assets/img/poster/mirage.png" alt="">
+                    <img src="./assets/img/poster/<?= $dados['imagem']?>" alt="Poster mirage" class="foto-produto">
                     <figcaption>
-                        <h4> Assassins Creed Mirage</h4>
-                        <span class="preco">R$ 15,00</span>
+                        <h4><?= $dados ['titulo'] ?> </h4>
+                        <span class="preco"><?= $dados['preco']?></span>
                         <span class="avaliacao">
                         <?php
-                        for ($i = 0; $i < 5; $i++) {
+                        for ($j = 0; $j < 5; $j++) {
                             echo ' <i class="bi bi-star-fill"></i>';
 
                         }
@@ -21,6 +23,7 @@
 
 
             </div>
+            <?php } ?>
         </div>
     </main>
 
