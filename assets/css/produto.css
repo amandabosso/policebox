@@ -54,3 +54,8 @@ margin-top: 10px;
     font-weight: 900;
     text-align: end;
 }
+
+#produto a{
+    text-decoration:none;
+    color: var(--color-black);
+}
